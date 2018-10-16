@@ -632,4 +632,4 @@ MonoBehaviour:
     type: 2}
   BulletPosition01: {fileID: 93231181}
   BulletPosition02: {fileID: 1991580127}
-  speed: 4
+  speed: 5
