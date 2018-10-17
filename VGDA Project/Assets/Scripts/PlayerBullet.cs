@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerBullet : MonoBehaviour
 {
     float speed;
-
+    public Rigidbody bullet;
 	// Use this for initialization
 	void Start ()
     {
@@ -15,10 +15,9 @@ public class PlayerBullet : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        //Get the Bullet's current position
+        //get position of the bullet
         Vector2 position = transform.position;
 
-        //find bullet's new position
         position = new Vector2(position.x, position.y + speed * Time.deltaTime);
 
         //update bullet posiiton
