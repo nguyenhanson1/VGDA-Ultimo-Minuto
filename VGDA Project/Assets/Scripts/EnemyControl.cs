@@ -26,11 +26,6 @@ public class EnemyControl : MonoBehaviour
 
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
 
-        // if the enemy went outside the screen on the bottom, then destroy
-        if (transform.position.y < min.y)
-        {
-            Destroy(gameObject);
-        }
 
 	}
 }
