@@ -20,7 +20,7 @@ void Start ()
     {
 		if (timeBTWspawns <= 0)
         {
-            int randPos = Random.Range(0, spawnlocations.Length - 1);
+            int randPos = Random.Range(0, spawnlocations.Length);
             Instantiate(Chaser, spawnlocations[randPos].position, Quaternion.identity);
             timeBTWspawns = startTimeBTWSpawns;
 
