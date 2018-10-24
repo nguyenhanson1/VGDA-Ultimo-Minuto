@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyControl : MonoBehaviour
+public class TronMove : MonoBehaviour
 {
-    float speed; // enemy speed
-
-	// Use this for initialization
-	void Start ()
+    float speed; // enemy speed 
+    public Vector2 min;
+    // Use this for initialization
+    void Start()
     {
         speed = 2f; // set speed
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         //Get enemy current position
         Vector2 position = transform.position;
@@ -24,8 +24,10 @@ public class EnemyControl : MonoBehaviour
         //update enemy position
         transform.position = position;
 
-        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+        if (position.y <= min.y)
+        {
+            Destroy(gameObject);
+        }
 
-
-	}
+    }
 }

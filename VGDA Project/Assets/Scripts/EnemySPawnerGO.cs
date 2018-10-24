@@ -5,7 +5,8 @@ using UnityEngine;
 public class EnemySPawnerGO : MonoBehaviour
 {
     public GameObject EnemyGO; //enemy prefab
-
+    public Vector2 min;
+    public Vector2 max;
     float maxSpawnRateInSeconds = 5f;
 
 	// Use this for initialization
@@ -27,11 +28,6 @@ public class EnemySPawnerGO : MonoBehaviour
     // Function to spawn enemy
     void SpawnEnemy()
     {
-        // this is the bottom-left point of the screen
-        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
-
-        //this is the top-right point of the screen
-        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
 
         //instantiate an enemy
         GameObject anEnemy = (GameObject)Instantiate(EnemyGO);
