@@ -429,7 +429,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.24313726, g: 0.02745098, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.12605044, g: 0.058873262, b: 0.1981132, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -467,7 +467,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -20}
+  m_LocalPosition: {x: 0, y: 0, z: -21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 572202269}
@@ -655,8 +655,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyGO: {fileID: 1712132785177692, guid: 3425e833ee23eb84ca13c70e7c745073, type: 2}
-  min: {x: -14.38, y: -8.01}
-  max: {x: 13.09, y: 6.1}
 --- !u!4 &1505902644
 Transform:
   m_ObjectHideFlags: 0
@@ -1166,12 +1164,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2094551911}
   - component: {fileID: 2094551910}
-  - component: {fileID: 2094551909}
   - component: {fileID: 2094551912}
   - component: {fileID: 2094551913}
   - component: {fileID: 2094551914}
   - component: {fileID: 2094551915}
-  - component: {fileID: 2094551916}
+  - component: {fileID: 2094551909}
   m_Layer: 31
   m_Name: PlayerGO
   m_TagString: Player
@@ -1179,24 +1176,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &2094551909
-Animator:
-  serializedVersion: 3
+--- !u!114 &2094551909
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2094551908}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 25b224780186fee46b6afded0745ea3c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 872217769b842b14ca6cf03aec007c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.04
 --- !u!212 &2094551910
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1271,6 +1262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  theBullet: {fileID: 0}
 --- !u!50 &2094551913
 Rigidbody2D:
   serializedVersion: 4
@@ -1324,21 +1316,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2094551908}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 906fc1d4d025dd64592d10371be2503f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shot: {fileID: 1997002166042572, guid: 9c80766dfcd56e74dafa4114b70155f6, type: 2}
---- !u!114 &2094551916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2094551908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ac3620091243a149a6faea3aadbfbde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
+  bulletPrefab: {fileID: 50192284852600390, guid: 9c80766dfcd56e74dafa4114b70155f6,
+    type: 2}
+  attackSpeed: 0.5
+  bulletSpeed: 500
