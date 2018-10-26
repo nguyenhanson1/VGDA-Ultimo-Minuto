@@ -6,7 +6,7 @@ public class FollowPlayer : MonoBehaviour {
 
     public Transform target;//what camerca will follow
     private Vector3 playerPosition;
-    public float OffsetZ;
+    private float OffsetZ;
     private void Start()
     {
         playerPosition = target.position;
