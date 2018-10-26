@@ -21,13 +21,14 @@ GameObject:
   - component: {fileID: 4811660626163410}
   - component: {fileID: 212275773257534658}
   - component: {fileID: 114854106909528158}
+  - component: {fileID: 114295535195737148}
   - component: {fileID: 114197090476676402}
   - component: {fileID: 61442048183898298}
   - component: {fileID: 50770567512541886}
   - component: {fileID: 96672778089883704}
   m_Layer: 0
   m_Name: TronEnemy
-  m_TagString: Enemies
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -316,8 +317,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 4
-<<<<<<< HEAD
-=======
 --- !u!114 &114295535195737148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -329,7 +328,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5422d06d4deddd643acf744b36d64832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> aff687bbb9d565f35f438c0cabcaba81825fc3c4
 --- !u!114 &114854106909528158
 MonoBehaviour:
   m_ObjectHideFlags: 1
