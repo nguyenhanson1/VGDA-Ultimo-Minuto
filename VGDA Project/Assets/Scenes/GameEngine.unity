@@ -1159,6 +1159,7 @@ GameObject:
   - component: {fileID: 2094551914}
   - component: {fileID: 2094551915}
   - component: {fileID: 2094551909}
+  - component: {fileID: 2094551916}
   m_Layer: 31
   m_Name: PlayerGO
   m_TagString: Player
@@ -1314,3 +1315,14 @@ MonoBehaviour:
     type: 2}
   attackSpeed: 0.5
   bulletSpeed: 500
+--- !u!114 &2094551916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094551908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5422d06d4deddd643acf744b36d64832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

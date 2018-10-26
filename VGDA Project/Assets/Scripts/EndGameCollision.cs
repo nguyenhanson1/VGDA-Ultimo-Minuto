@@ -6,9 +6,9 @@ public class EndGameCollision : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Enemies")
         {
-            Debug.Log("Object Enter");
+            Invoke("Restart", 2f);
         }
     }
 }
