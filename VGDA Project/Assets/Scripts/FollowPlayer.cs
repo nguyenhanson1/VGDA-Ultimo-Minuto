@@ -5,15 +5,9 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour {
 
     public Transform target;//what camerca will follow
-    private Vector3 playerPosition;
-    public float OffsetZ;
-    private void Start()
-    {
-        playerPosition = target.position;
-        OffsetZ = (transform.position - target.position).z;
-    }
+    public Vector3 OffsetZ;
     // Update is called once per frame
     void Update () {
-        transform.position = target.TransformVector(target.position.x,target.position.y,target.position.z + OffsetZ);
+        transform.position = target.position + OffsetZ;
 	}
 }
