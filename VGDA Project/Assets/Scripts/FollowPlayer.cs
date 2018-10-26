@@ -6,14 +6,14 @@ public class FollowPlayer : MonoBehaviour {
 
     public Transform target;//what camerca will follow
     private Vector3 playerPosition;
-    private float OffsetZ;
+    private Vector3 OffsetZ;
     private void Start()
     {
         playerPosition = target.position;
-        OffsetZ = (transform.position - target.position).z;
+        OffsetZ = new Vector3(0,0,transform.position.z - target.position.z);
     }
     // Update is called once per frame
     void Update () {
-        transform.position = target.TransformVector(target.position.x,target.position.y,target.position.z + OffsetZ);
+        transform.position = target.position + OffsetZ;
 	}
 }
