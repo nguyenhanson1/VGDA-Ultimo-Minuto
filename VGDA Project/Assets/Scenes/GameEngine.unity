@@ -243,7 +243,7 @@ TrailRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_MotionVectors: 1
+  m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
@@ -268,7 +268,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 2
+  m_Time: 0.6
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 1
@@ -277,7 +277,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.125
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -289,18 +289,18 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.3962264, g: 0.24110003, b: 0.24110003, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
+      key0: {r: 1, g: 0.9214484, b: 0, a: 1}
+      key1: {r: 1, g: 0.629899, b: 0, a: 1}
+      key2: {r: 1, g: 0.0489275, b: 0, a: 0}
+      key3: {r: 1, g: 0.048927486, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 65535
-      ctime2: 0
-      ctime3: 0
+      ctime1: 34310
+      ctime2: 65342
+      ctime3: 53199
       ctime4: 0
       ctime5: 0
       ctime6: 0
@@ -314,12 +314,12 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 2
+      m_NumColorKeys: 3
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
@@ -428,7 +428,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.12605044, g: 0.058873262, b: 0.1981132, a: 0}
+  m_BackGroundColor: {r: 0.124306306, g: 0, b: 0.26415092, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -443,7 +443,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.9724135
+  orthographic size: 6.0017686
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1170,6 +1170,7 @@ GameObject:
   - component: {fileID: 2094551914}
   - component: {fileID: 2094551915}
   - component: {fileID: 2094551909}
+  - component: {fileID: 2094551916}
   m_Layer: 31
   m_Name: PlayerGO
   m_TagString: Player
@@ -1204,7 +1205,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 71450e2f34218224eafd13e753a2a63f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1221,11 +1222,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1804903571
+  m_SortingLayer: -1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4408def3249dd0f449f728d7de828ed3, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1326,3 +1327,17 @@ MonoBehaviour:
     type: 2}
   attackSpeed: 0.5
   bulletSpeed: 500
+--- !u!114 &2094551916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094551908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69c9fbd2b1c3e4ea78bb7b03df941f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matOfObject: {fileID: 2100000, guid: 71450e2f34218224eafd13e753a2a63f, type: 2}
+  newCol: {r: 0, g: 0.17727494, b: 1, a: 1}
+  changeColor: 103
