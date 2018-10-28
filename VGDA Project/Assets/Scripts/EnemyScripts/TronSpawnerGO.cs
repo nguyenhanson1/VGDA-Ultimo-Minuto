@@ -8,7 +8,7 @@ public class TronSpawnerGO : MonoBehaviour {
     public Vector2 max;
     public GameObject EnemyGO; //enemy prefab
 
-    float maxSpawnRateInSeconds = 5f;
+    float maxSpawnRateInSeconds = 8f;
 
     // Use this for initialization
     void Start()
@@ -16,7 +16,7 @@ public class TronSpawnerGO : MonoBehaviour {
 
         Invoke("SpawnEnemy", maxSpawnRateInSeconds);
         // Increase spawn Rate every 30 seconds
-        InvokeRepeating("IncreaseSpawnRate", 0f, 30f);
+        InvokeRepeating("IncreaseSpawnRate", 0f, 90f);
     }
 
     // Update is called once per frame

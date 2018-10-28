@@ -11,12 +11,14 @@ public class EnemyCollider : MonoBehaviour
         var hit = collision.gameObject;
         var health = hit.GetComponent<PlayerHealth>();
         if (collision.gameObject.tag == "Player")
-            if (health != null)
         {
+            if (health != null)
+            {
                 health.TakeDamage(damage);
-        }
+            }
 
-        Destroy(gameObject);
+            Destroy(gameObject);
+        }
     }
 }
 

@@ -444,7 +444,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.6
+  m_Time: 0.2
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 1
@@ -880,6 +880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1505902644}
   - component: {fileID: 1505902643}
+  - component: {fileID: 1505902645}
   m_Layer: 0
   m_Name: SpawnTronEnemy
   m_TagString: Untagged
@@ -899,7 +900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   min: {x: -14.38, y: -8.01}
-  max: {x: 13.09, y: 9.7187}
+  max: {x: 13.09, y: 9.5}
   EnemyGO: {fileID: 1712132785177692, guid: 3425e833ee23eb84ca13c70e7c745073, type: 2}
 --- !u!4 &1505902644
 Transform:
@@ -914,6 +915,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505902645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1505902642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2912505b4bb0f48ab8511bfc76ad1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min: {x: -14.38, y: -8.01}
+  max: {x: 13.09, y: 9.5}
+  EnemyGO: {fileID: 1712132785177692, guid: 8e854794e1b0d2145a1473c62bec4ba7, type: 2}
 --- !u!1 &1818493735
 GameObject:
   m_ObjectHideFlags: 0
