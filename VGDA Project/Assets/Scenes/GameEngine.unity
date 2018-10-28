@@ -688,7 +688,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.518507
+  orthographic size: 13.812323
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   min: {x: -19.3, y: -36}
-  max: {x: 61, y: 12}
+  max: {x: 61, y: 11.5}
   EnemyGO: {fileID: 1712132785177692, guid: 3425e833ee23eb84ca13c70e7c745073, type: 2}
 --- !u!4 &1505902644
 Transform:
@@ -927,7 +927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   min: {x: -19.3, y: -36}
-  max: {x: 61, y: 12}
+  max: {x: 61, y: 11.5}
   EnemyGO: {fileID: 1712132785177692, guid: 8e854794e1b0d2145a1473c62bec4ba7, type: 2}
 --- !u!1 &1818493735
 GameObject:
@@ -1509,6 +1509,7 @@ Transform:
   m_Children:
   - {fileID: 93231182}
   - {fileID: 1991580128}
+  - {fileID: 255889111}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
