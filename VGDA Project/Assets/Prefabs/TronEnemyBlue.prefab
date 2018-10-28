@@ -69,7 +69,7 @@ Transform:
   m_GameObject: {fileID: 1712132785177692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.06, y: 3.63, z: 1766.6418}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4068246619247540}
   m_Father: {fileID: 0}
@@ -159,7 +159,7 @@ TrailRenderer:
   m_Time: 10
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.5
+    widthMultiplier: 1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d377d180ed48014aa835658e0ebcccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
+  Speed: 2
 --- !u!114 &114295535195737148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49ab08dd66ae764bb7c71dbea016b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: {x: 0, y: -9.25}
+  min: {x: 0, y: -36.25}
 --- !u!212 &212275773257534658
 SpriteRenderer:
   m_ObjectHideFlags: 1
