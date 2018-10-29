@@ -1425,12 +1425,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2094551911}
   - component: {fileID: 2094551910}
-  - component: {fileID: 2094551912}
   - component: {fileID: 2094551913}
   - component: {fileID: 2094551914}
+  - component: {fileID: 2094551912}
+  - component: {fileID: 2094551916}
   - component: {fileID: 2094551915}
   - component: {fileID: 2094551909}
-  - component: {fileID: 2094551916}
   - component: {fileID: 2094551917}
   m_Layer: 31
   m_Name: PlayerGO
@@ -1483,9 +1483,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1804903571
-  m_SortingLayer: -1
-  m_SortingOrder: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4408def3249dd0f449f728d7de828ed3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1505,7 +1505,7 @@ Transform:
   m_GameObject: {fileID: 2094551908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 22.03, y: -13.02, z: 33.28}
-  m_LocalScale: {x: 2.5764, y: 2.5764, z: 2.5764}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 93231182}
   - {fileID: 1991580128}
@@ -1524,7 +1524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f98c446951422146b0753bcb00aeea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   theBullet: {fileID: 0}
 --- !u!50 &2094551913
 Rigidbody2D:
@@ -1600,7 +1600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   matOfObject: {fileID: 2100000, guid: 71450e2f34218224eafd13e753a2a63f, type: 2}
-  newCol: {r: 0, g: 0.17727494, b: 1, a: 1}
+  newCol: {r: 0, g: 0.28559113, b: 1, a: 1}
   changeColor: 103
 --- !u!114 &2094551917
 MonoBehaviour:

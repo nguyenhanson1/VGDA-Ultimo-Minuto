@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4811660626163410}
   - component: {fileID: 212275773257534658}
+  - component: {fileID: 114803215339309566}
   - component: {fileID: 114854106909528158}
-  - component: {fileID: 114295535195737148}
   - component: {fileID: 114197090476676402}
   - component: {fileID: 61442048183898298}
   - component: {fileID: 50770567512541886}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2
---- !u!114 &114295535195737148
+--- !u!114 &114803215339309566
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -232,9 +232,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1712132785177692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5422d06d4deddd643acf744b36d64832, type: 3}
+  m_Script: {fileID: 11500000, guid: 82d0b10d169f8e541a020e3569dd141d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 5
+  enemyColorRed: 1
 --- !u!114 &114854106909528158
 MonoBehaviour:
   m_ObjectHideFlags: 1

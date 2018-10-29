@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4811660626163410}
   - component: {fileID: 212275773257534658}
+  - component: {fileID: 114094406203107088}
   - component: {fileID: 114854106909528158}
-  - component: {fileID: 114295535195737148}
   - component: {fileID: 114197090476676402}
   - component: {fileID: 61442048183898298}
   - component: {fileID: 50770567512541886}
@@ -212,6 +212,19 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &114094406203107088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1712132785177692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d0b10d169f8e541a020e3569dd141d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  enemyColorRed: 0
 --- !u!114 &114197090476676402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,17 +237,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2
---- !u!114 &114295535195737148
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1712132785177692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5422d06d4deddd643acf744b36d64832, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114854106909528158
 MonoBehaviour:
   m_ObjectHideFlags: 1
