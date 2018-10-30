@@ -20,14 +20,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4811660626163410}
   - component: {fileID: 212275773257534658}
+  - component: {fileID: 114094406203107088}
   - component: {fileID: 114854106909528158}
-  - component: {fileID: 114295535195737148}
   - component: {fileID: 114197090476676402}
   - component: {fileID: 61442048183898298}
   - component: {fileID: 50770567512541886}
   m_Layer: 0
-  m_Name: TronEnemy
-  m_TagString: Untagged
+  m_Name: TronEnemyBlue
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +69,7 @@ Transform:
   m_GameObject: {fileID: 1712132785177692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.06, y: 3.63, z: 1766.6418}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4068246619247540}
   m_Father: {fileID: 0}
@@ -159,7 +159,7 @@ TrailRenderer:
   m_Time: 10
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.5
+    widthMultiplier: 1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -177,8 +177,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0, g: 0.0967958, b: 1, a: 1}
+      key1: {r: 0, g: 0.26089263, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -212,6 +212,19 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &114094406203107088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1712132785177692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d0b10d169f8e541a020e3569dd141d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  enemyColorRed: 0
 --- !u!114 &114197090476676402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -223,18 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d377d180ed48014aa835658e0ebcccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
---- !u!114 &114295535195737148
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1712132785177692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5422d06d4deddd643acf744b36d64832, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  Speed: 2
 --- !u!114 &114854106909528158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -246,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49ab08dd66ae764bb7c71dbea016b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: {x: 0, y: -9.5}
+  min: {x: 0, y: -57.5}
 --- !u!212 &212275773257534658
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -283,7 +285,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 30d73f5615467e74ba64dfe93c332afa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.16732645, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -10,11 +10,13 @@ public class UpdateHitBox : MonoBehaviour {
     void Update () {
         // get Component of Box collider
         tronBox = GetComponent<BoxCollider2D>();
+        if (tronBox.size.y < 20.54)
+        {
+            // Update Offset if BoxCollider2D
+            tronBox.offset = new Vector2(tronBox.offset.x, tronBox.offset.y + (0.5f * Speed) * Time.deltaTime);
 
-        // Update Offset if BoxCollider2D
-        tronBox.offset = new Vector2(tronBox.offset.x, tronBox.offset.y + (0.5f * Speed) * Time.deltaTime);
-
-        // Update Size of BoxCollider2D
-        tronBox.size = new Vector2(tronBox.size.x, tronBox.size.y + Speed * Time.deltaTime);
+            // Update Size of BoxCollider2D
+            tronBox.size = new Vector2(tronBox.size.x, tronBox.size.y + Speed * Time.deltaTime);
+        }
     }
 }

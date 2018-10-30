@@ -5,18 +5,24 @@ using UnityEngine;
 public class EnemyCollider : MonoBehaviour
 { 
     public int damage;
-
+    public bool enemyColorRed;
     void OnTriggerEnter2D(Collider2D collision)
     {
+        string checkString = FindObjectOfType<ChangePolarity>().Check();
         var hit = collision.gameObject;
         var health = hit.GetComponent<PlayerHealth>();
-        if (collision.gameObject.tag == "Player")
-            if (health != null)
+        if ((checkString == "red" & enemyColorRed == false) || (checkString == "blue" & enemyColorRed == true))
         {
-                health.TakeDamage(damage);
+            if (collision.gameObject.tag == "Player")
+            {
+                Debug.Log("Hit");
+                if (health != null)
+                {
+                    health.TakeDamage(damage);
+                }
+                Destroy(gameObject);
+            }
         }
-
-        Destroy(gameObject);
     }
 }
 
